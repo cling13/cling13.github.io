@@ -49,7 +49,7 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
+  - title:             리버싱 핵심원리
     url:               /example/
   - title:             Documentation
     url:               /docs/

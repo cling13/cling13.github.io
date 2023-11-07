@@ -1,0 +1,20 @@
+current directory: C:/Users/User/Desktop/git.blog/cling13.github.io/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+C:/Ruby32-x64/bin/ruby.exe extconf.rb
+creating Makefile
+
+current directory: C:/Users/User/Desktop/git.blog/cling13.github.io/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20231005-22136-ael2bh sitelibdir\=./.gem.20231005-22136-ael2bh clean
+
+current directory: C:/Users/User/Desktop/git.blog/cling13.github.io/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20231005-22136-ael2bh sitelibdir\=./.gem.20231005-22136-ael2bh
+generating ruby_http_parser-x64-mingw-ucrt.def
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: C:/Users/User/Desktop/git.blog/cling13.github.io/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20231005-22136-ael2bh sitelibdir\=./.gem.20231005-22136-ael2bh install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20231005-22136-ael2bh
+
+current directory: C:/Users/User/Desktop/git.blog/cling13.github.io/blog/vendor/bundle/ruby/3.2.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20231005-22136-ael2bh sitelibdir\=./.gem.20231005-22136-ael2bh clean

@@ -51,8 +51,6 @@ author:
 menu:
   - title:             리버싱 핵심원리
     url:               /reversing/
-  - title:             Documentation
-    url:               /docs/
   - title:             About
     url:               /about/
 

@@ -3,10 +3,10 @@
 layout: list
 
 # The title of the tag's page.
-title: 리버싱 핵심원리
+title: 리버싱 핵심원리 1단원
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: reversing
+slug: reversing1
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >

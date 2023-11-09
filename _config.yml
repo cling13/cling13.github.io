@@ -51,6 +51,8 @@ author:
 menu:
   - title:             리버싱 핵심원리
     url:               /reversing/
+  - title:             백준 문제풀이
+    url:               /backjoon/
   - title:             About
     url:               /about/
 

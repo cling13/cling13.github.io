@@ -53,8 +53,6 @@ menu:
     url:               /reversing/
   - title:             백준 문제풀이
     url:               /backjoon/
-  - title:             About
-    url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..

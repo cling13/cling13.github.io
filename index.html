@@ -1,48 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Image Slider</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="slide">
-                <div class="item" style="background-image: url(./Image/img1.jpg);">
-                    <div class="name">Switzerland</div>
-                    <div class="des">Lorem ipsum</div>
-                    <button>See More</button>
-                </div>
-                <div class="item" style="background-image: url(./Image/img2.jpg);">
-                    <div class="name">Stwod</div>
-                    <div class="des">Lorem ipsum</div>
-                    <button>See More</button>
-                </div>
-                <div class="item" style="background-image: url(./Image/img3.jpg);">
-                    <div class="name">three</div>
-                    <div class="des">Lorem ipsum</div>
-                    <button>See More</button>
-                </div>
-                <div class="item" style="background-image: url(./Image/img4.jpg);">
-                    <div class="name">four</div>
-                    <div class="des">Lorem ipsum</div>
-                    <button>See More</button>
-                </div>
-                <div class="item" style="background-image: url(./Image/img5.jpg);">
-                    <div class="name">five</div>
-                    <div class="des">Lorem ipsum</div>
-                    <button>See More</button>
-                </div>
-            </div>
+<!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.css" referrerpolicy="no-referrer" />
+     
+    <div class="title">
+        <h1>한빈의 블로그</h1>
+    </div>
 
-            <div class="button">
-                <button class="prev"></button>
-                <button class="next"></button>
+
+<div class="container">
+    <div class="slide">
+        <div class="item" style="background-image: url(./Image/img4.jpg);">
+            <div class="content">
+                <div class="name">리버싱 핵심원리</div>
+                <div class="des">리버싱 핵심원리 교재의 내용을 정리한 공간</div>
+                <button data-href ='reverse.html'>go</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(./Image/img2.jpg);">
+            <div class="content">
+                <div class="name">백준 문제풀이</div>
+                <div class="des">백준 문제들의 정답 코드와 문제의 해설을 정리한 공간</div>
+                <button data-href ='backjoon.html'>go</button>
             </div>
         </div>
 
-        <script src="app.js"></script>
-    </body>
-</html>
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fas fa-arrow-left"></i></button>
+        <button class="next"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+</div>
+
+<script>
+
+document.querySelectorAll('.item button').forEach(function (button) {
+    button.addEventListener('click', function () {
+        window.location.href=button.getAttribute('data-href');
+    });
+});
+
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    
+    next.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').appendChild(items[0]);
+    });
+
+    prev.addEventListener('click', function () {
+        let items = document.querySelectorAll('.item');
+        document.querySelector('.slide').prepend(items[items.length - 1]);
+    });
+
+
+</script>
